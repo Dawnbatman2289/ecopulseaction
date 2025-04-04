@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Features - SDG 13: Climate Action</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="interactive-page">
+    <header>
+        <h1>Interactive Features</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">What is Climate Change?</a></li>
+                <li><a href="tips.html">Tips and Advice</a></li>
+                <li><a href="interactive.html">Interactive Features</a></li>
+                <li><a href="community.html">Community Section</a></li>
+                <li><a href="resources.html">Resources and Links</a></li>
+                <li><a href="goal.html">Our Team Goal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Climate Change Quiz</h2>
+        <img src="coding folder/images.jpg" alt="Quiz Image">
+        <div id="quiz-container">
+            <!-- Quiz questions will be dynamically added here by scripts.js -->
+        </div>
+        
+        <h2>Interactive Maps</h2>
+        <figure class="image-container">
+            <img src="coding folder/climate change in africa.jpg" alt="Interactive Map Placeholder">
+            <figcaption>Explore climate change impacts around the world.</figcaption>
+        </figure>
+        
+        <h2>Carbon Footprint Calculator</h2>
+        <form id="carbon-footprint-form">
+            <label for="electricity">Electricity Usage (kWh):</label>
+            <input type="number" id="electricity" name="electricity"><br>
+            <label for="gas">Gas Usage (kWh):</label>
+            <input type="number" id="gas" name="gas"><br>
+            <label for="water">Water Usage (Litres):</label>
+            <input type="number" id="water" name="water"><br>
+            <label for="fuel">Fuel Usage (Litres):</label>
+            <input type="number" id="fuel" name="fuel"><br>
+            <label for="waste">Waste (kg):</label>
+            <input type="number" id="waste" name="waste"><br>
+            <button type="button" onclick="calculateCarbonFootprint()">Calculate</button>
+        </form>
+        <p id="carbon-footprint-result"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Code for Change. All rights reserved.</p>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
